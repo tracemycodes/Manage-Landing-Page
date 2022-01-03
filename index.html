@@ -9,23 +9,43 @@
   </head>
   <body>
     <div class="container">
-      <div class="pattern-fill-up">
-        <img src="./images/bg-tablet-pattern.svg" alt="" />
+      <div class="modal-closed" id="modal-container">
+        <div class="modal">
+          <ul class="modal-component">
+            <li class="modal-item">
+              <a href="#" class="modal-link">Pricing</a>
+            </li>
+            <li class="modal-item">
+              <a href="#" class="modal-link">Product</a>
+            </li>
+            <li class="modal-item">
+              <a href="#" class="modal-link">About Us</a>
+            </li>
+            <li class="modal-item">
+              <a href="#" class="modal-link">Careers</a>
+            </li>
+            <li class="modal-item">
+              <a href="#" class="modal-link">Community</a>
+            </li>
+          </ul>
+        </div>
       </div>
 
-      <div class="main">
+      <header>
         <nav class="nav-bar">
-          <div class="nav-brand">
-            <a href="#" class="nav-logo">
-              <img src="./images/logo.svg" alt="logo" />
-            </a>
-          </div>
+          <a href="#" class="nav-logo">
+            <img src="./images/logo.svg" alt="logo" />
+          </a>
           <ul class="nav-component">
             <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Product</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">About us</a></li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">About us</a>
+            </li>
             <li class="nav-item"><a href="#" class="nav-link">Careers</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Community</a></li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Community</a>
+            </li>
           </ul>
           <div class="nav-button">
             <button>Get Started</button>
@@ -36,6 +56,35 @@
             alt="menu"
           />
         </nav>
+      </header>
+
+      <div class="main">
+        <!-- <header>
+          <nav class="nav-bar">
+            <a href="#" class="nav-logo">
+              <img src="./images/logo.svg" alt="logo" />
+            </a>
+            <ul class="nav-component">
+              <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Product</a></li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">About us</a>
+              </li>
+              <li class="nav-item"><a href="#" class="nav-link">Careers</a></li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Community</a>
+              </li>
+            </ul>
+            <div class="nav-button">
+              <button>Get Started</button>
+            </div>
+            <img
+              class="hamburger-menu"
+              src="./images/icon-hamburger.svg"
+              alt="menu"
+            />
+          </nav>
+        </header> -->
         <section class="landing-page">
           <article class="landing-text-div article-div">
             <h2 class="article-header-one">
@@ -206,5 +255,7 @@
         </div>
       </section>
     </div>
+
+    <script src="./app.js"></script>
   </body>
 </html>
