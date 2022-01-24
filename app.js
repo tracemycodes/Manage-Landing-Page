@@ -1,6 +1,9 @@
 const menu = document.querySelector(".hamburger-menu");
 const carousel = document.querySelectorAll(".carousel-item");
 const body = document.body;
+const navBar = document.querySelector(".nav-bar");
+
+console.log(navBar);
 
 
 
@@ -39,6 +42,8 @@ window.onclick = function (e) {
 let lastScroll = 0;
 window.addEventListener("scroll", () => {
   const currentScroll = window.pageYOffset;
+  // console.log(currentScroll > 102)
+  navBarScroll(currentScroll)
   if (currentScroll <= 0) {
     body.classList.remove("scroll-Up");
     return;
@@ -54,8 +59,17 @@ window.addEventListener("scroll", () => {
 });
 
 
-console.log(carousel);
-// console.log(carouselArr);
+function navBarScroll (point) {
+  if (point > 103) {
+    navBar.classList.add("nav-bar-offset");
+    
+  } else {
+    navBar.classList.remove("nav-bar-offset");
+  }
+}
+
+// console.log(carousel);
+
 
 
 function arrayit () {

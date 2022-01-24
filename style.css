@@ -34,11 +34,10 @@ header {
   align-items: center;
   justify-content: space-between;
   position: relative;
-  border: 2px solid purple;
   width: 100%;
   padding: 0 11.5%;
   z-index: 4;
-  transition: transform 0.6s;
+  transition: all 0.6s ease-in;
 }
 
 .scroll-Down .nav-bar {
@@ -47,6 +46,13 @@ header {
 
 .scroll-Up .nav-bar {
   transform: none;
+}
+
+.nav-bar-offset {
+  background-color: white;
+  border: none;
+  border-bottom: transparent;
+  box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.1);
 }
 
 .nav-logo img {
