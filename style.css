@@ -72,6 +72,10 @@ header {
   display: none;
 }
 
+.nav-component .nav-item .nav-link:hover {
+  color: hsl(227, 12%, 61%);
+}
+
 .nav-component .nav-item .nav-link {
   font-size: 0.8rem;
   font-weight: 700;
@@ -81,10 +85,10 @@ header {
 
 .nav-button button {
   font-size: 0.8rem;
-  font-weight: 700;
+  /* font-weight: 700; */
   width: 7.813rem;
   height: 2.5rem;
-  border-radius: 2rem;
+  /* border-radius: 2rem; */
   display: none;
 }
 
@@ -105,6 +109,7 @@ button {
   color: hsl(0, 0%, 98%);
   width: 6.6rem;
   height: 2.2rem;
+  box-shadow: 0px 6px 10px 0px hsla(12, 88%, 59%, 0.44);
 }
 
 #modal-container {
@@ -155,6 +160,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border: 2px solid green;
 }
 
 .landing-page article {
@@ -165,6 +171,7 @@ button {
   position: relative;
   overflow: visible;
   z-index: 2;
+  border: 2px solid navy;
 }
 
 .landing-illustrator img {
@@ -191,6 +198,7 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border: 2px solid yellow;
 }
 .landing-text-div .article-header-one {
   margin-bottom: 0.5rem;
@@ -322,7 +330,7 @@ button {
 }
 
 .carousel-div {
-  border: 1px solid gold;
+  /* border: 1px solid gold; */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(17.5rem, 1fr));
   gap: 5rem;
@@ -338,6 +346,10 @@ button {
   position: relative;
   text-align: center;
   margin-bottom: 4rem;
+  /* border: 1px solid green; */
+  filter: drop-shadow(0px 5px 5px -3px rgba(0, 0, 0, 0.782));
+  filter: drop-shadow(1px 2px 5px rgba(0, 0, 0, 0.1));
+  /* box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.1); */
 }
 
 .carousel-item .article-paragraph {
@@ -611,8 +623,8 @@ button {
     width: 100%;
   }
   .carousel-div {
-    width: 85%;
-    margin: auto;
+    width: 100%;
+    /* margin: auto; */
   }
 }
 
@@ -660,8 +672,8 @@ button {
     margin-bottom: 1rem;
   }
   .article-count {
-    position: relative;
-    margin-right: 1rem;
+    position: absolute;
+    /* margin-right: 1rem; */
     top: 0;
     left: 0;
     height: 100%;
@@ -670,7 +682,8 @@ button {
     border-top-left-radius: 2rem;
     border-bottom-left-radius: 2rem;
     background-color: hsl(13, 100%, 96%);
-    padding: 0.4rem 0;
+    padding: 0.4rem 0rem 0.4rem 3.5rem;
+    /* margin-left: 1rem; */
   }
   .grid-one .article-div .article-paragraph {
     text-align: center;
