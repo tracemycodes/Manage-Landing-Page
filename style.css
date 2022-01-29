@@ -364,10 +364,13 @@ button {
   width: 100%;
 }
 
+.footer {
+  margin-top: 10rem;
+}
+
 .footer-one {
   padding: 0 11.5%;
   display: flex;
-  margin-top: 10rem;
   height: 12.82rem;
   justify-content: space-between;
   align-items: center;
@@ -385,8 +388,10 @@ button {
   color: white;
   max-width: 27rem;
   width: 100%;
+  text-align: center;
 }
 .footer-two {
+  border: 2px solid indigo;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
@@ -396,15 +401,15 @@ button {
   background-color: hsl(233, 12%, 13%);
   color: hsl(0, 0%, 98%);
   position: relative;
-  height: 100%;
 }
 .footer-two .social-links {
+  border: 2px solid yellow;
   display: flex;
   flex-direction: column-reverse;
   justify-content: space-between;
-  width: 80%;
+  width: 85%;
   height: 6rem;
-  margin: 2rem 0;
+  margin: 1rem auto;
 }
 .footer-two .social-links div {
   display: flex;
@@ -417,21 +422,22 @@ button {
   align-self: center;
 }
 .footer-two .navigation {
+  border: 2px solid green;
   display: flex;
   justify-content: space-between;
   gap: 1.3rem;
   margin: 1rem auto;
   width: 85%;
 }
-.footer-two .navigation div {
-  width: 100%;
-  min-width: 6rem;
+.footer-two .navigation ul li {
+  list-style: none;
+  margin: 0.7rem 0;
 }
-.footer-two .navigation :first-child {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.footer-two .navigation ul li a {
+  text-decoration: none;
+  color: hsl(0, 0%, 98%);
 }
+
 .footer-two .navigation div a {
   line-height: 1.7rem;
   font-size: 0.9rem;
