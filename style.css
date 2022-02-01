@@ -286,6 +286,8 @@ button:hover {
   height: 100%;
   text-align: center;
   margin: 4.5rem 0;
+  /* border: 2px solid red; */
+  position: relative;
 }
 .carousel-slide button {
   margin: 1rem auto;
@@ -301,6 +303,35 @@ button:hover {
   width: 100%;
   max-height: 16rem;
   padding-top: 2rem;
+  /* position: relative; */
+  /* border: 2px solid green; */
+}
+.carousel-slide .next {
+  position: absolute;
+  right: 0;
+  z-index: 2;
+  top: calc(50% - 3rem);
+  margin-right: 2rem;
+  font-size: 3rem;
+  color: rgba(255, 68, 0, 0.35);
+  cursor: pointer;
+  display: none;
+}
+.carousel-slide .prev {
+  position: absolute;
+  left: 0;
+  z-index: 2;
+  top: calc(50% - 3rem);
+  margin-left: 2rem;
+  font-size: 3rem;
+  color: rgba(255, 68, 0, 0.35);
+  cursor: pointer;
+  display: none;
+}
+
+.carousel-slide:hover .prev,
+.carousel-slide:hover .next {
+  display: block;
 }
 .carousel-item {
   padding: 2.5rem 1rem 1rem 1rem;
