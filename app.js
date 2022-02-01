@@ -133,19 +133,17 @@ function nextSlider (e) {
   e.preventDefault();
 
   const UIcarouselDiv = document.querySelector(".carousel-div");
-  let carouselEl = [...UIcarousel]
-  let lastItem = carouselEl.pop();
-  carouselEl.unshift(lastItem)
+  let lastItem = carouselArr.pop();
+  carouselArr.unshift(lastItem)
   // console.log(carouselEl);
 
   UIcarouselDiv.innerHTML = ` `
   
-  carouselEl.forEach((divEl, index) => {
-    console.log(divEl, index);
-    // let carouselEl = document.createElement("div");
-  // carouselEl.className = "carousel-item";
-  // carouselEl.innerHTML = divEl;
-  UIcarouselDiv.appendChild(divEl);
+  carouselArr.forEach((divEl) => {
+    let carouselEl = document.createElement("div");
+  carouselEl.className = "carousel-item";
+  carouselEl.innerHTML = divEl;
+  UIcarouselDiv.appendChild(carouselEl);
  });
 }
 
@@ -159,7 +157,6 @@ function prevSlider (e) {
   UIcarouselDiv.innerHTML = ` `
 
   carouselArr.forEach((divEl) => {
-    console.log(divEl);
   let carouselEl = document.createElement("div");
   carouselEl.className = "carousel-item";
   carouselEl.innerHTML = divEl;
