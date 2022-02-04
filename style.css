@@ -14,7 +14,6 @@ body {
   position: relative;
   overflow: hidden;
 }
-
 .main {
   width: 77%;
   height: 100%;
@@ -75,14 +74,12 @@ header {
   color: hsl(228, 39%, 23%);
   text-decoration: none;
 }
-
 .nav-button button {
   font-size: 0.8rem;
   width: 7.813rem;
   height: 2.5rem;
   display: none;
 }
-
 .hamburger-menu {
   cursor: pointer;
   position: relative;
@@ -100,7 +97,7 @@ button {
   box-shadow: 0px 4px 10px 0px hsla(12, 88%, 59%, 0.44);
   cursor: pointer;
 }
-button:hover {
+button:active {
   color: rgb(255, 255, 255);
   background-color: hsla(12, 100%, 82%, 0.891);
 }
@@ -240,7 +237,6 @@ button:hover {
   position: absolute;
   background-image: url(./images/bg-tablet-pattern.svg);
   z-index: -1;
-  /* background-position: left bottom; */
   background-position: left center;
   background-size: 85%;
   background-repeat: no-repeat;
@@ -290,6 +286,21 @@ button:hover {
 }
 .carousel-slide button {
   margin: 1rem auto;
+}
+.carousel-slide .pagination-bar {
+  width: 3.5rem;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  display: none;
+}
+.carousel-slide .pagination-item {
+  width: 0.6rem;
+  height: 0.6rem;
+  border: 1.9px solid orangered;
+  border-radius: 50%;
+  list-style: none;
+  cursor: pointer;
 }
 .carousel-slide h3 {
   padding: 1rem;
@@ -676,6 +687,14 @@ button:hover {
   .grid-one * {
     text-align: center;
   }
+  .grid-one::before {
+    width: 200%;
+    height: 240%;
+    top: -200%;
+    left: 63%;
+    background-position: bottom left;
+    background-size: 70%;
+  }
   .article-header-two {
     font-size: clamp(1rem, 4vw, 2.3rem);
     color: hsl(228, 39%, 23%);
@@ -713,6 +732,9 @@ button:hover {
   }
   .carousel-item .article-header-three {
     padding: 0;
+  }
+  .carousel-slide .pagination-bar {
+    display: flex;
   }
   .footer-one {
     padding: 0 11.5%;
