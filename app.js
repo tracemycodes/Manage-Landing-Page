@@ -63,22 +63,6 @@ function navBarScroll(point) {
   }
 }
 
-// console.log(carousel);
-
-// function carouselEl () {
-//   const carouselArr = [...carousel]
-//   console.log(carouselArr);
-//   const UIcarouselDiv = document.querySelector(".carousel-div")
-//   console.log(UIcarouselDiv);
-
-//   let lastItem = carouselArr.pop()
-
-//   carouselArr.unshift(lastItem)
-//   UIcarouselDiv.replaceChild(carouselArr, carousel)
-
-// }
-
-// carouselEl()
 
 const item1 = `<div class="profile-photo">
               <img src="./images/avatar-anisha.png" alt="loading..." />
@@ -135,7 +119,6 @@ function nextSlider (e) {
   const UIcarouselDiv = document.querySelector(".carousel-div");
   let lastItem = carouselArr.pop();
   carouselArr.unshift(lastItem)
-  // console.log(carouselEl);
 
   UIcarouselDiv.innerHTML = ` `
   
